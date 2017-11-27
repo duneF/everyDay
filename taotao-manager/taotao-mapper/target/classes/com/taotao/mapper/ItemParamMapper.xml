@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.taotao.mapper.ItemParamMapper">
+	
+	<resultMap type="com.taotao.pojo.TbItemParam" id="aaa">
+		<id column="id" property="id"/>	
+		<result column="item_cat_id" property="itemCatId"/>
+		<result column="param_data" property="paramData"/>
+		<result column="created" property="created"/>
+		<result column="updated" property="updated"/>
+		<result column="name" property="itemCatName"/>
+		
+	</resultMap>
+	
+	<!-- 分页查询商品规格 -->
+	<select id="findItemParamList" resultMap="aaa" parameterType="map">
+		select tb_item_param.*,name from tb_item_param,tb_item_cat where tb_item_param.item_cat_id = tb_item_cat.id order by created desc limit #{page},#{rows}
+	</select>
+	
+	<!-- 统计总记录数 -->
+	<select id="count" resultType="int">
+		select count(*) from tb_item_param 
+	</select>
+
+	<!-- 根据item_cat_id查询商品规格 -->
+	<select id="queryItemParamByItemCatId" resultMap="aaa" parameterType="long">
+		select tb_item_param.*,name from tb_item_param,tb_item_cat where tb_item_param.item_cat_id = tb_item_cat.id and tb_item_param.item_cat_id=#{value}
+	</select>
+	
+	
+	<!-- 添加商品规格 -->
+	<insert id="saveItemParam" parameterType="com.taotao.pojo.TbItemParam">
+		insert into tb_item_param values(null,#{itemCatId},#{paramData},#{created},#{updated});
+	</insert>
+	
+	<!-- 删除商品规格 -->
+	<delete id="deleteItemParam" parameterType="long">
+		DELETE FROM tb_item_param where id = #{id}
+	</delete>
+	
+	<resultMap type="com.taotao.pojo.TbItemParamItem" id="itemParamItem">
+		<id column="id" property="id"/>	
+		<result column="item_id" property="itemId"/>
+		<result column="param_data" property="paramData"/>
+		<result column="created" property="created"/>
+		<result column="updated" property="updated"/>
+	
+		
+	</resultMap>
+	
+	<!-- 查询一个商品的详细规格 -->
+	<select id="queryItemParamItem" resultMap="itemParamItem" parameterType="long">
+		select * from tb_item_param_item where item_id = #{value}
+	</select>
+	
+	
+</mapper>
