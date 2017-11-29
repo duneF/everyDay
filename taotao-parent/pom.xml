@@ -36,9 +36,25 @@
     <jedis.version>2.7.2</jedis.version>
     <solrj.version>4.10.3</solrj.version>
    <json.version>20171018</json.version>
+    <jedis.version>2.9.0</jedis.version>
+    <commons-pool2>2.4.2</commons-pool2>
   </properties>
   <dependencyManagement>
     <dependencies>
+
+      <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+      <dependency>
+        <groupId>redis.clients</groupId>
+        <artifactId>jedis</artifactId>
+        <version>${jedis.version}</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-pool2 -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-pool2</artifactId>
+        <version>${commons-pool2}</version>
+      </dependency>
+
       <!-- 时间操作组件 -->
       <dependency>
         <groupId>joda-time</groupId>
