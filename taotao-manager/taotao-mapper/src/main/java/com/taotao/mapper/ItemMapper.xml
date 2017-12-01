@@ -97,7 +97,11 @@
 
 	<!-- 商品上架 -->
 	<update id="updateItemStatusToOne" parameterType="com.taotao.pojo.TbItem">
-		update tb_item set status=#{status} where id =#{id}
+		update tb_item findAllByTbitemset status=#{status} where id =#{id}
 	</update>
-	
+	<select id="findAllByTbitem" resultType="com.taotao.mapper.ItemSolrBean">
+	SELECT a.id,a.title,a.sell_point,a.price,a.image,b.item_desc,c.name FROM tb_item as a
+	INNER JOIN tb_item_desc b ON a.id=b.item_id
+	INNER JOIN tb_item_cat c ON  c.id=a.cid
+	</select>
 </mapper>

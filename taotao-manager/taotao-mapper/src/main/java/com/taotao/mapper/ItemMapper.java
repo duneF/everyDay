@@ -37,4 +37,8 @@ public interface ItemMapper {
 	//商品上架
 	void updateItemStatusToOne(TbItem item);
 
+
+
+//	添加信息到solr索引库
+	List<ItemSolrBean>findAllByTbitem();
 }

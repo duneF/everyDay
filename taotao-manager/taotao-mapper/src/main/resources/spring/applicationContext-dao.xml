@@ -29,5 +29,6 @@
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- 指定要扫描的包 -->
 		<property name="basePackage" value="com.taotao.mapper"/>
+
 	</bean>
 </beans>
