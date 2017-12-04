@@ -9,7 +9,7 @@
     <artifactId>taotao-web</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>taotao-web Maven Webapp</name>
+    <name>web Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>

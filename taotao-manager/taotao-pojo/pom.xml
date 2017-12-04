@@ -9,7 +9,7 @@
     <artifactId>taotao-pojo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Maven Portlet Archetype</name>
+    <name>pojo</name>
     <url>http://maven.apache.org</url>
     <profiles>
         <profile>
@@ -29,6 +29,7 @@
         </profile>
     </profiles>
     <dependencies>
+
         <dependency>
             <groupId>portlet-api</groupId>
             <artifactId>portlet-api</artifactId>

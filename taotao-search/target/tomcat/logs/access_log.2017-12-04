@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [04/Dec/2017:00:05:00 +0800] "GET / HTTP/1.1" 404 949 http-bio-8083-exec-1 90
+0:0:0:0:0:0:0:1 - - [04/Dec/2017:00:05:33 +0800] "GET /search/Index HTTP/1.1" 404 949 http-bio-8083-exec-3 27648
+0:0:0:0:0:0:0:1 - - [04/Dec/2017:00:05:33 +0800] "GET /search/Index HTTP/1.1" 404 949 http-bio-8083-exec-2 31014
+0:0:0:0:0:0:0:1 - - [04/Dec/2017:00:05:39 +0800] "GET /search/addIndex HTTP/1.1" 404 949 http-bio-8083-exec-6 6
+0:0:0:0:0:0:0:1 - - [04/Dec/2017:00:05:44 +0800] "GET /search/addIndex HTTP/1.1" 404 949 http-bio-8083-exec-4 2
+0:0:0:0:0:0:0:1 - - [04/Dec/2017:00:06:32 +0800] "GET /solr HTTP/1.1" 404 949 http-bio-8083-exec-9 4

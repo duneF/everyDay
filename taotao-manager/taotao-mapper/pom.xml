@@ -9,7 +9,7 @@
     <artifactId>taotao-mapper</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Maven Portlet Archetype</name>
+    <name>mapper</name>
     <url>http://maven.apache.org</url>
     <profiles>
         <profile>

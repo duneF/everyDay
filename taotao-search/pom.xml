@@ -9,7 +9,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>taotao-search</artifactId>
     <packaging>war</packaging>
-    <name>Maven Portlet Archetype</name>
+    <name>taotao-searche</name>
     <url>http://maven.apache.org</url>
     <profiles>
         <profile>
@@ -81,10 +81,10 @@
             <artifactId>jsp-api</artifactId>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.json</groupId>-->
+            <!--<artifactId>json</artifactId>-->
+        <!--</dependency>-->
         <!--solr客户端-->
         <!-- https://mvnrepository.com/artifact/org.apache.solr/solr-solrj -->
         <dependency>

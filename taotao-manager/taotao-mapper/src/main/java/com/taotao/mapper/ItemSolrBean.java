@@ -62,6 +62,15 @@ public class ItemSolrBean {
         this.image = image;
     }
 
+
+    private String imageItem;
+
+    public String getImageItem(){
+        String [] split=image.split(",");
+        return split[0];
+    }
+
+
     public String getItem_desc() {
         return item_desc;
     }

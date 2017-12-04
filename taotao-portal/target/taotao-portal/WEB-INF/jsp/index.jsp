@@ -45,6 +45,7 @@
     // 初始化一个广告信息
     if ( cfg.DATA_MSlide.length > 1 ) {
     	var first = pageConfig.FN_GetCompatibleData( cfg.DATA_MSlide[0] );
+    	alert(cfg.DATA_MSlide[0])
         var TPL = ''
             +'<ul class="slide-items">'
             +'<li clstag="homepage|keycount|home2013|09a1">'
