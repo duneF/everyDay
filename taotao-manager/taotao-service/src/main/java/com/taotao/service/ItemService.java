@@ -2,6 +2,7 @@ package com.taotao.service;
 
 
 import com.taotao.common.pojo.IDUtils;
+import com.taotao.common.pojo.TreeNode;
 import com.taotao.mapper.ItemMapper;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemDesc;
@@ -142,4 +143,7 @@ public class ItemService {
 		return mapper.findAllByTbitem();
 	}
 
+    public List<TreeNode> findTreeNodeByid(Integer id) {
+		return mapper.findTreeNodeByid(id);
+    }
 }

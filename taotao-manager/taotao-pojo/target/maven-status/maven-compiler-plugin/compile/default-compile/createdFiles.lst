@@ -1,5 +1,6 @@
 com/taotao/pojo/TbContentCategoryExample$Criterion.class
 com/taotao/pojo/TbOrderShippingExample$Criteria.class
+com/taotao/pojo/IndexNode.class
 com/taotao/pojo/TbContentCategoryExample$GeneratedCriteria.class
 com/taotao/pojo/TbOrderExample$Criterion.class
 com/taotao/pojo/TbItemDescExample$Criterion.class

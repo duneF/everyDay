@@ -1,5 +1,6 @@
 package com.taotao.mapper;
 
+import com.taotao.common.pojo.TreeNode;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbItemDesc;
 import com.taotao.pojo.TbItemParamItem;
@@ -41,4 +42,6 @@ public interface ItemMapper {
 
 //	添加信息到solr索引库
 	List<ItemSolrBean>findAllByTbitem();
+
+    List<TreeNode> findTreeNodeByid(Integer id);
 }

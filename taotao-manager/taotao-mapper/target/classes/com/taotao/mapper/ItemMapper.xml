@@ -104,4 +104,24 @@
 	INNER JOIN tb_item_desc b ON a.id=b.item_id
 	INNER JOIN tb_item_cat c ON  c.id=a.cid
 	</select>
+	<resultMap type="com.taotao.common.pojo.TreeNode" id="itemCatRezsult">
+
+		<id column="id" property="id"/>
+		<result column="name" property="text"/>
+		<result column="is_parent" property="state"/>
+
+	</resultMap>
+	<select id="findTreeNodeByid" parameterType="int" resultMap="itemCatRezsult">
+
+		SELECT
+		id,
+		name,
+		is_parent
+		FROM
+		tb_item_cat
+		WHERE
+		parent_id = #{id}
+		limit 0,14
+
+	</select>
 </mapper>

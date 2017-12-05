@@ -83,6 +83,12 @@
             <artifactId>commons-pool2</artifactId>
             <version>${commons-pool2}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.json/json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${json.version}</version>
+        </dependency>
         <!--&lt;!&ndash; https://mvnrepository.com/artifact/net.sf.json-lib/json-lib &ndash;&gt;-->
         <!--<dependency>-->
             <!--<groupId>net.sf.json-lib</groupId>-->
