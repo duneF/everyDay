@@ -1,6 +1,7 @@
 var TT = TAOTAO = {
 	checkLogin : function(){
 		var _ticket = $.cookie("TT_TOKEN");
+		alert(_ticket+"_ticket")
 		if(!_ticket){
 			return ;
 		}
@@ -9,9 +10,11 @@ var TT = TAOTAO = {
 			dataType : "jsonp",
 			type : "GET",
 			success : function(data){
+				alert(data.status+"callBack1")
 				if(data.status == 200){
+					alert(data.data.username+"username+data")
 					var username = data.data.username;
-					var html = username + "，欢迎来到淘淘！<a href=\"http://www.taotao.com/user/logout.html\" class=\"link-logout\">[退出]</a>";
+					var html = username + "，欢迎来到淘淘！<a href=\"http://localhost:8084/user/logout\" class=\"link-logout\">[退出]</a>";
 					$("#loginbar").html(html);
 				}
 			}

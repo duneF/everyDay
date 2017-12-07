@@ -1,0 +1,2 @@
+127.0.0.1 - - [06/Dec/2017:15:48:21 +0800] "GET /portal/mainAd HTTP/1.1" 404 949 http-bio-8081-exec-1 115
+127.0.0.1 - - [06/Dec/2017:15:48:43 +0800] "GET /portal/mainAd HTTP/1.1" 404 949 http-bio-8081-exec-3 3

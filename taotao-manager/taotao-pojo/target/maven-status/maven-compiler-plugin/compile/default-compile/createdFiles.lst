@@ -4,6 +4,7 @@ com/taotao/pojo/IndexNode.class
 com/taotao/pojo/TbContentCategoryExample$GeneratedCriteria.class
 com/taotao/pojo/TbOrderExample$Criterion.class
 com/taotao/pojo/TbItemDescExample$Criterion.class
+com/taotao/pojo/SSOT.class
 com/taotao/pojo/TbItemCatExample$Criterion.class
 com/taotao/pojo/TbItemCatExample$GeneratedCriteria.class
 com/taotao/pojo/TbItemExample$Criteria.class

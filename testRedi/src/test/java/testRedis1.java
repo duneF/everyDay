@@ -13,7 +13,6 @@ public class testRedis1 {
         //通过对象调用api操作5钟数据
         jedis.set("abc", "ccc");
         abc = jedis.get("abc");
-        System.out.println(abc);
         jedis.close();
     }
   static   public void testJedisPool() {
@@ -24,7 +23,6 @@ public class testRedis1 {
       //  jedis.auth("123456");
       jedis.set("key","AAA");
         String string = jedis.get("key");
-        System.out.println(string);
         //关闭jedis对象
         jedis.close();
         pool.close();

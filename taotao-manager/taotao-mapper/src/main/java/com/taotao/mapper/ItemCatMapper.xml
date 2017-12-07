@@ -8,9 +8,10 @@
 		<result column="is_parent" property="state"></result>
 	
 	</resultMap>
-	
-	
-	<!-- 查询商品分类 -->
+
+
+
+    <!-- 查询商品分类 -->
 	<select id="findAllItemCatByParentId" resultMap="treeNode" parameterType="long">
 		select id,name,is_parent from tb_item_cat where parent_id = #{value}
 	</select>

@@ -12,6 +12,7 @@
 
     <artifactId>taotao-portal</artifactId>
     <packaging>war</packaging>
+
     <dependencies>
         <dependency>
             <groupId>com.tao</groupId>
