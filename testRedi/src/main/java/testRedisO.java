@@ -13,18 +13,18 @@ public class testRedisO {
     private static byte[] b;
 
     public static void main(String[] args) {
-        JedisPool pool = new JedisPool("192.168.99.132", 6379);
+        JedisPool pool = new JedisPool("192.168.99.134", 7002);
         //从连接池中获得Jedis对象
         Jedis jedis = pool.getResource();
         //  jedis.auth("123456");
-        jedis.set("key", "AAA");
-        String string = jedis.get("key");
+        jedis.set("TT2", "AAAB");
+        String string = jedis.get("TT2");
         System.out.println(string);
-        jedis.set("str","1503");
-        stu = new Stu("1", "大毛");
-        jedis.set("stu1".getBytes(),stu.toString().getBytes());
-        b = jedis.get("stu1".getBytes());
-        ByteToObject(b);
+//        jedis.set("str","1503");
+//        stu = new Stu("1", "大毛");
+//        jedis.set("stu1".getBytes(),stu.toString().getBytes());
+//        b = jedis.get("stu1".getBytes());
+//        ByteToObject(b);
         //关闭jedis对象
         jedis.close();
         pool.close();

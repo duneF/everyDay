@@ -82,7 +82,7 @@ public class TbUser implements Serializable{
 
     @Override
     public String toString() {
-        return "TbUser{" +
+        return "{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +

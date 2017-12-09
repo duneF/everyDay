@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+
+	<!--<bean id="sorClient" class="redis.clients.jedis.Client">-->
+			<!--<constructor-arg name="jedis" value="http://192.168.99.134:8080/solr"/>-->
+		<!--</bean>-->
+</beans>
