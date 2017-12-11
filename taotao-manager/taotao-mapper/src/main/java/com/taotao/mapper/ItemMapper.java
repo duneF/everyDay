@@ -37,7 +37,9 @@ public interface ItemMapper {
 	void updateItemStatus(TbItem item);
 	//商品上架
 	void updateItemStatusToOne(TbItem item);
-
+	//导出到Excel
+	//List<TbItem>outToExcel(long parseLong);
+	List<TbItem>outToExcel();
 
 
 //	添加信息到solr索引库

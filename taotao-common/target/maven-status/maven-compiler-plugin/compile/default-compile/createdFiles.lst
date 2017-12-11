@@ -3,6 +3,7 @@ com/taotao/common/pojo/FtpUtil.class
 com/taotao/common/pojo/TreeNode.class
 com/taotao/common/pojo/ByteUtils.class
 com/taotao/common/pojo/EasyUITreeNode.class
+com/taotao/common/pojo/ExportExcel.class
 com/taotao/common/pojo/ItemCatNode.class
 com/taotao/common/pojo/CookieUtils.class
 com/taotao/common/pojo/IDUtils.class

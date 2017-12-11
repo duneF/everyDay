@@ -171,5 +171,58 @@
         	    }
         	});
         }
-    }];
+   },
+// {
+//        text:'导出到Excel',
+//        iconCls:'icon-remove',
+//        handler:function(){
+//            var ids = getSelectionsIds();
+//            if(ids.length == 0){
+//                $.messager.alert('提示','未选中商品!');
+//                return ;
+//            }
+//            $.messager.confirm('确认','确定导出ID为 '+ids+' 的商品吗？',function(r){
+//                if (r){
+//                    var params = {"ids":ids};
+//                    $.post("/rest/item/outToExcel",params, function(data){
+//                        if(data.status == 200){
+//                            $.messager.alert('提示','导出商品成功!',undefined,function(){
+//                                $("#itemList").datagrid("reload");
+//                            });
+//                        }
+//                    });
+//                }
+//            });
+//        }
+//    }
+        {
+            text:'导出到Excel',
+            iconCls:'icon-remove',
+            handler:function(){
+                var ids = getSelectionsIds();
+//                if(ids.length == 0){
+//                    $.messager.alert('提示','未选中商品!');
+//                    return ;
+//                }
+                $.messager.confirm('确认','确定导出ID为 '+ids+' 的商品吗？',function(r){
+                    if (r){
+                        var params = {"ids":ids};
+                       // $.post("/rest/item/outToExcel",params, function(data){
+                        $.post("/rest/item/outToExcel",function(data){
+                            if(data.status == 200){
+                                $.messager.alert('提示','导出商品成功!',undefined,function(){
+                                    $("#itemList").datagrid("reload");
+                                });
+                            }
+                        });
+                    }
+                });
+            }
+        }
+
+
+
+
+
+    ];
 </script>

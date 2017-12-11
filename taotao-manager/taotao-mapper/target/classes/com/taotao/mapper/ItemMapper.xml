@@ -59,6 +59,12 @@
 	<delete id="deleteItem" parameterType="long">
 		delete from tb_item where id = #{value}
 	</delete>
+	<!--导出到Excel-->
+	<select id="outToExcel" resultMap="aaa">
+	<!--select * from tb_item WHERE id =#{value}-->
+		select * from tb_item
+	</select>
+
 	
 	<resultMap type="com.taotao.pojo.TbItemDesc" id="itemdesc">
 		<result column="item_id" property="itemId"></result>
